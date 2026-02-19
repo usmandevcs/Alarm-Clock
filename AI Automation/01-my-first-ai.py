@@ -1,7 +1,7 @@
 from google import genai
 
 # 1. Client connecting
-client = genai.Client(api_key="AIzaSyAZuQDTFgiY64mZNP9-meB8DOUndNv8BC8")
+client = genai.Client(api_key="Api key")
 
 print("AI is thinking....")
 
