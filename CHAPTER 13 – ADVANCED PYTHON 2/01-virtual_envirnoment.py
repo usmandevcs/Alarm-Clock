@@ -20,6 +20,10 @@ se koi link nhi hota.
 # To activate:
         # \virtual_environment ka name\scripts\activate.
 
+# to deactivate:
+# deactivate
+
+
 '''
 The next step after creating the virtual environment is to 
 activate it. 

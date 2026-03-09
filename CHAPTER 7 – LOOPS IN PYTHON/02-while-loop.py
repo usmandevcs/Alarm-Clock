@@ -18,6 +18,21 @@ i = 0
 while i < 5: # print "Harry" – 5 times! 
     print("Harry")     
     i = i + 1 
+
+# Example 2:
+
+age = int(input("Enter your age: "))
+
+while age < 18:
+    print("You are not eligible to vote.")
+    age = int(input("Enter your age: "))
+print(f"You are {age} years old and eligible to vote.")
+'''
+while loops are useful when we want to repeat a block of code 
+until a certain condition is met. They are often used when the 
+number of iterations is not known beforehand, and we want to 
+continue looping until a specific condition becomes false.
+'''
 # Note: 
 #  If the condition never become false, the loop keeps getting executed. 
 

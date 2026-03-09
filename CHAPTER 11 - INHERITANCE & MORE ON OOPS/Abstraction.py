@@ -14,11 +14,12 @@ Andar circuit kaise chalta hai → nahi dekhte.
 '''
 Python me abstraction ke liye hum abstract classes aur
 abstract methods ka use karte hain.
-Abstract class: Ek aisi class jo khud se object nahi bana sakti,
-lekin dusri classes ke liye blueprint ka kaam karti hai.
-Abstract method: Ek aisi method jo abstract class me declare hoti hai,
-lekin uska implementation nahi hota. Subclasses ko is method ko
-implement karna padta hai.
+Abstract class: Ek aisi class jo khud se object nahi bana 
+sakti,lekin dusri classes ke liye blueprint ka kaam karti 
+hai.
+Abstract method: Ek aisi method jo abstract class me 
+declare hoti hai,lekin uska implementation nahi hota. 
+Subclasses ko is method ko implement karna padta hai.
 '''
 from abc import ABC, abstractmethod
 class Vehicle(ABC):
