@@ -1,0 +1,18 @@
+cd                         ✅ sahi folder mein jao
+git init                   ✅ Git ko bolo "is folder ko track karo"
+git remote add origin URL  ✅ GitHub repo se connect karo
+git add .                  ✅ saari files tayyar karo (envelope mein daalo)
+git commit -m "message"    ✅ snapshot lo
+git push -u origin main    ✅ GitHub par upload karo
+
+
+Example usage
+
+1st : cd "D:\Python\Mega PROJECT 1. JARVIS"  ---> folder ki location  
+2nd: git init
+3rd: git remote add origin "https://github.com/usmandevcs/Jarvis-ai-assistant.git"  --->  URL ha Github repo ka 
+4th: git add .
+5th: git commit -m "JARVIS AI Assistant - initial commit" ---> message aur screenshot lelo 
+6th: git push -u origin main
+
+7th: code .gitignore  ---> is se aik file open hoti jo cheezy hum nhi upload karna chahty wo is me add kardy gy jis se wo ignore jaye gi

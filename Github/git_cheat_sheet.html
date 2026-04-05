@@ -1,0 +1,57 @@
+
+<style>
+  .wrap { padding: 16px 0; font-family: var(--font-sans); }
+  .section-title { font-size: 13px; font-weight: 500; color: var(--color-text-secondary); text-transform: uppercase; letter-spacing: 0.06em; margin: 20px 0 8px; }
+  .section-title:first-child { margin-top: 0; }
+  .cmd-row { display: grid; grid-template-columns: 220px 1fr; gap: 0; border-radius: 0; border-bottom: 1px solid var(--color-border-tertiary); }
+  .cmd-row:first-of-type { border-radius: var(--border-radius-lg) var(--border-radius-lg) 0 0; }
+  .cmd-row:last-of-type { border-radius: 0 0 var(--border-radius-lg) var(--border-radius-lg); border-bottom: none; }
+  .cmd-row:only-of-type { border-radius: var(--border-radius-lg); border-bottom: none; }
+  .cmd { background: var(--color-background-secondary); padding: 10px 14px; font-family: var(--font-mono); font-size: 13px; color: var(--color-text-primary); border-right: 1px solid var(--color-border-tertiary); display: flex; align-items: center; }
+  .desc { background: var(--color-background-primary); padding: 10px 14px; font-size: 13px; color: var(--color-text-secondary); display: flex; align-items: center; line-height: 1.5; }
+  .badge { display: inline-block; font-size: 10px; font-weight: 500; padding: 2px 7px; border-radius: 10px; margin-right: 8px; white-space: nowrap; }
+  .b-done { background: #EAF3DE; color: #27500A; }
+  .b-next { background: #E6F1FB; color: #0C447C; }
+  @media (prefers-color-scheme: dark) {
+    .b-done { background: #27500A; color: #C0DD97; }
+    .b-next { background: #0C447C; color: #B5D4F4; }
+  }
+</style>
+<div class="wrap">
+  <div class="section-title">Setup — ek baar karo</div>
+  <div class="cmd-row"><div class="cmd">git --version</div><div class="desc">Check karo Git installed hai ya nahi</div></div>
+  <div class="cmd-row"><div class="cmd">git config --global init.defaultBranch main</div><div class="desc">Default branch ka naam "main" set karo</div></div>
+
+  <div class="section-title">Naya repo shuru karna <span class="badge b-done">✓ seekh liya</span></div>
+  <div class="cmd-row"><div class="cmd">cd folder-name</div><div class="desc">Us folder mein jao</div></div>
+  <div class="cmd-row"><div class="cmd">git init</div><div class="desc">Git ko bolo "is folder ko track karo"</div></div>
+  <div class="cmd-row"><div class="cmd">git remote add origin URL</div><div class="desc">GitHub repo se connect karo</div></div>
+  <div class="cmd-row"><div class="cmd">git remote -v</div><div class="desc">Check karo connection sahi hai ya nahi</div></div>
+  <div class="cmd-row"><div class="cmd">git remote set-url origin URL</div><div class="desc">Purana connection badlo naye URL se</div></div>
+
+  <div class="section-title">Rozana ka kaam <span class="badge b-done">✓ seekh liya</span></div>
+  <div class="cmd-row"><div class="cmd">git status</div><div class="desc">Dekho kya kya change hua hai</div></div>
+  <div class="cmd-row"><div class="cmd">git add .</div><div class="desc">Saari files tayyar karo snapshot ke liye</div></div>
+  <div class="cmd-row"><div class="cmd">git add filename</div><div class="desc">Sirf ek specific file tayyar karo</div></div>
+  <div class="cmd-row"><div class="cmd">git commit -m "message"</div><div class="desc">Snapshot lo — message mein likho kya kiya</div></div>
+  <div class="cmd-row"><div class="cmd">git push -u origin main</div><div class="desc">GitHub par upload karo (pehli baar)</div></div>
+  <div class="cmd-row"><div class="cmd">git push</div><div class="desc">GitHub par upload karo (baad mein)</div></div>
+
+  <div class="section-title">Team ke saath kaam <span class="badge b-next">aage seekhna hai</span></div>
+  <div class="cmd-row"><div class="cmd">git pull</div><div class="desc">GitHub se nayi changes apne laptop par lao</div></div>
+  <div class="cmd-row"><div class="cmd">git clone URL</div><div class="desc">Kisi ka poora repo apne laptop par copy karo</div></div>
+
+  <div class="section-title">Branching <span class="badge b-next">aage seekhna hai</span></div>
+  <div class="cmd-row"><div class="cmd">git branch branch-name</div><div class="desc">Nai branch banao</div></div>
+  <div class="cmd-row"><div class="cmd">git checkout -b branch-name</div><div class="desc">Nai branch banao aur us mein chale jao</div></div>
+  <div class="cmd-row"><div class="cmd">git checkout main</div><div class="desc">Wapas main branch par aao</div></div>
+  <div class="cmd-row"><div class="cmd">git merge branch-name</div><div class="desc">Branch ka kaam main mein mila lo</div></div>
+
+  <div class="section-title">Open source <span class="badge b-next">aage seekhna hai</span></div>
+  <div class="cmd-row"><div class="cmd">git fork</div><div class="desc">Kisi ka repo apne GitHub account mein copy karo</div></div>
+  <div class="cmd-row"><div class="cmd">git pull request</div><div class="desc">Apna kaam original repo mein bhejo review ke liye</div></div>
+
+  <div class="section-title">Special files</div>
+  <div class="cmd-row"><div class="cmd">.gitignore</div><div class="desc">Git ko batao — "ye folders/files mat track karo"</div></div>
+  <div class="cmd-row"><div class="cmd">README.md</div><div class="desc">Project ki description — GitHub par dikhti hai</div></div>
+</div>
